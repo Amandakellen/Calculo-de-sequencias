@@ -4,28 +4,7 @@
 #include <iostream>
 #include<stdlib.h>
 
-//https://stackoverflow.com/questions/27770050/using-stdostream-as-argument-to-a-print-function
-//https://www.hardware.com.br/comunidade/sobrecarga-operadores/1150421/
-//http://www.dca.fee.unicamp.br/cursos/POOCPP/node58.html
-//https://pt.cppreference.com/w/cpp/container/vector
-//https://msdn.microsoft.com/pt-br/library/9xd04bzs.aspx
-//http://sweet.ua.pt/joao.p.silva/stl.html
-//https://msdn.microsoft.com/pt-br/library/9xd04bzs.aspx
-//http://www.guj.com.br/t/resolvido-objetos-em-c/281718/9
 
-
-
-
-//https://stackoverflow.com/questions/27770050/using-stdostream-as-argument-to-a-print-function
-//https://www.hardware.com.br/comunidade/sobrecarga-operadores/1150421/
-//http://www.dca.fee.unicamp.br/cursos/POOCPP/node58.html
-//https://pt.cppreference.com/w/cpp/container/vector
-//https://msdn.microsoft.com/pt-br/library/9xd04bzs.aspx
-//http://sweet.ua.pt/joao.p.silva/stl.html
-//https://msdn.microsoft.com/pt-br/library/9xd04bzs.aspx
-//http://www.cplusplus.com/reference/vector/vector/emplace_back/
-//https://pt.stackoverflow.com/questions/120231/como-usar-o-vector-para-armazenar-uma-classe
-//https://stackoverflow.com/questions/35689763/how-do-you-make-a-vector-of-class-objects
 
 using namespace std;
 
@@ -34,15 +13,15 @@ class seq
      
 	
 	protected:
-    virtual void gen_elems(int )=0 ;// Gera os elementos da série até o iésimo elemento (protected)
+    virtual void gen_elems(int )=0 ;// Gera os elementos da sÃ©rie atÃ© o iÃ©simo elemento (protected)
     
     
      public:
      	  vector <unsigned long int>  sequencia; 
-     	 int length() ;// Retorna o tamanho atual da série
+     	 int length() ;// Retorna o tamanho atual da sÃ©rie
      	 void print(ostream &os); // Escreve todos os elementos gerados em os (public)
-  	 int elem(int ); // Retorna o iésimo elemento da seqüência (public)
-  	 	void imprime1(int ,int);//Imprime sequencia de i até j
+  	 int elem(int ); // Retorna o iÃ©simo elemento da seqÃ¼Ãªncia (public)
+  	 	void imprime1(int ,int);//Imprime sequencia de i atÃ© j
   	 	void elemento();
   	 	void imprime_termo(int );
   	 	 friend ostream & operator<<(ostream &,seq &);
